@@ -5,9 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00A6FF"
+    android:clickable="true"
     tools:context=".MainActivity">
 
     <TableLayout
+        android:id="@+id/cardBoard"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="20dp"
@@ -28,21 +30,27 @@
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                app:srcCompat="@drawable/backface"
-                android:contentDescription="TODO" />
+                android:clickable="true"
+                android:contentDescription="TODO"
+                android:onClick="changeImage"
+                app:srcCompat="@drawable/strawberry" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                app:srcCompat="@drawable/backface" />
+                android:clickable="true"
+                android:onClick="changeImage"
+                app:srcCompat="@drawable/orange" />
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:onClick="changeImage"
                 app:srcCompat="@drawable/backface" />
         </TableRow>
 
@@ -55,6 +63,8 @@
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:onClick="changeImage"
                 app:srcCompat="@drawable/backface" />
 
             <ImageView
@@ -62,14 +72,18 @@
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                app:srcCompat="@drawable/backface" />
+                android:clickable="true"
+                android:onClick="changeImage"
+                app:srcCompat="@drawable/banana" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                app:srcCompat="@drawable/backface" />
+                android:clickable="true"
+                android:onClick="changeImage"
+                app:srcCompat="@drawable/tree" />
         </TableRow>
 
         <TableRow
@@ -81,20 +95,26 @@
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                app:srcCompat="@drawable/backface" />
+                android:clickable="true"
+                android:onClick="changeImage"
+                app:srcCompat="@drawable/rock" />
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                app:srcCompat="@drawable/backface" />
+                android:clickable="true"
+                android:onClick="changeImage"
+                app:srcCompat="@drawable/plank" />
 
             <ImageView
                 android:id="@+id/imageView11"
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:onClick="changeImage"
                 app:srcCompat="@drawable/backface" />
         </TableRow>
 
@@ -107,6 +127,8 @@
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:onClick="changeImage"
                 app:srcCompat="@drawable/backface" />
 
             <ImageView
@@ -114,6 +136,8 @@
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:onClick="changeImage"
                 app:srcCompat="@drawable/backface" />
 
             <ImageView
@@ -121,7 +145,10 @@
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:onClick="changeImage"
                 app:srcCompat="@drawable/backface" />
         </TableRow>
     </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
