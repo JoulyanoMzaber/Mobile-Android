@@ -47,19 +47,22 @@ public class MainActivity extends AppCompatActivity {
             previous2 = img;
             ctr++;
         }
-            else
-            {
-                if (previous.resourceId != current.resourceId)
-                {
-                    img.setImageResource(R.drawable.backface);
-                    current.setResourceId(R.drawable.backface);
-
-                    previous.setResourceId(R.drawable.backface);
-                    previous2.setImageResource(R.drawable.backface);
-                    ctr++;
-                }
+        else if (previous.resourceId != current.resourceId)
+        {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+            img.setImageResource(R.drawable.backface);
+            current.setResourceId(R.drawable.backface);
+
+            previous.setResourceId(R.drawable.backface);
+            previous2.setImageResource(R.drawable.backface);
+            ctr++;
+        }
     }
+
 
     public void setTags()
     {
